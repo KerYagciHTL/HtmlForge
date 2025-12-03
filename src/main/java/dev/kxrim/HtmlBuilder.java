@@ -85,6 +85,14 @@ public class HtmlBuilder {
             .append("</a>\n");
     }
 
+    public void addImage(String src, String alt) {
+        html.append("<img src=\"")
+            .append(src)
+            .append("\" alt=\"")
+            .append(alt)
+            .append("\">\n");
+    }
+
     public void build() {
         head.append(html);
         head.append("</body>\n");
