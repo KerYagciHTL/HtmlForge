@@ -6,19 +6,33 @@ import java.nio.file.Paths;
 public class HtmlBuilder {
     private final StringBuilder html;
     private final StringBuilder head;
-    private String title = "Document";
-    private String lang = "en";
-    private String charset = "UTF-8";
-    private String viewport = "width=device-width, initial-scale=1.0";
+    private final String title;
+    private final String lang;
+    private final String charset;
+    private final String viewport;
 
     public HtmlBuilder() {
+        this("en", "UTF-8", "width=device-width, initial-scale=1.0", "Document");
+    }
+
+    public HtmlBuilder(String title) {
+        this("en", "UTF-8", "width=device-width, initial-scale=1.0", title);
+    }
+
+    public HtmlBuilder(String lang, String charset, String viewport, String title) {
         html = new StringBuilder();
         head = new StringBuilder();
+
+        this.lang = lang;
+        this.charset = charset;
+        this.viewport = viewport;
+        this.title = title;
+
         buildHead();
     }
 
     private void buildHead() {
-        head.setLength(0); // Clear the StringBuilder
+        head.setLength(0);
         head.append("<!DOCTYPE html>\n");
         head.append("<html lang=\"").append(lang).append("\">\n");
         head.append("<head>\n");
@@ -68,35 +82,15 @@ public class HtmlBuilder {
         return lang;
     }
 
-    public void setLang(String lang) {
-        this.lang = lang;
-        buildHead();
-    }
-
     public String getCharset() {
         return charset;
-    }
-
-    public void setCharset(String charset) {
-        this.charset = charset;
-        buildHead();
     }
 
     public String getViewport() {
         return viewport;
     }
 
-    public void setViewport(String viewport) {
-        this.viewport = viewport;
-        buildHead();
-    }
-
     public String getTitle() {
         return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-        buildHead();
     }
 }
