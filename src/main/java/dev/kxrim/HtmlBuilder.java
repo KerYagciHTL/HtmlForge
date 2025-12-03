@@ -115,6 +115,15 @@ public class HtmlBuilder {
             .append("\"></textarea>\n");
     }
 
+    public void addList(boolean ordered, String... items) {
+        String tag = ordered ? "ol" : "ul";
+        html.append("<").append(tag).append(">\n");
+        for (String item : items) {
+            html.append("<li>").append(item).append("</li>\n");
+        }
+        html.append("</").append(tag).append(">\n");
+    }
+
     public void build() {
         head.append(html);
         head.append("</body>\n");
