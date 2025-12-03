@@ -6,6 +6,9 @@ on:
       - main
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -20,8 +23,10 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
       
-      - name: Compile Java project
+      - name: Clean and compile Java project
         run: |
+          rm -rf target/classes
+          mkdir -p target/classes
           javac -d target/classes src/main/java/dev/kxrim/*.java
       
       - name: Run project to generate HTML
@@ -34,9 +39,10 @@ jobs:
           cp generated/index.html deploy/index.html
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./deploy
           publish_branch: gh-pages
+          force_orphan: true
 
