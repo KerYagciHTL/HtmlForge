@@ -93,6 +93,16 @@ public class HtmlBuilder {
             .append("\">\n");
     }
 
+    public void addInput(String type, String name, String placeholder) {
+        html.append("<input type=\"")
+            .append(type)
+            .append("\" name=\"")
+            .append(name)
+            .append("\" placeholder=\"")
+            .append(placeholder)
+            .append("\">\n");
+    }
+
     public void build() {
         head.append(html);
         head.append("</body>\n");
