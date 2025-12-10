@@ -121,6 +121,7 @@ src/main/java/dev/kxrim/
 mvn compile
 mvn exec:java -Dexec.mainClass="dev.kxrim.Main"
 ```
+Check the `generated/` folder for your HTML file.
 
 ## Run tests
 
@@ -128,7 +129,6 @@ mvn exec:java -Dexec.mainClass="dev.kxrim.Main"
 mvn test
 ```
 
-Check the `generated/` folder for your HTML file.
 
 ## Why This Exists
 
