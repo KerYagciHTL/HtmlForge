@@ -164,9 +164,13 @@ themes/
 ## How Themes Work
 
 1. When you call `builder.useTheme(Theme.CODIX)`, HtmlForge remembers your choice
-2. During `builder.build()`, the theme's CSS file is automatically copied to `generated/assets/style.css`
-3. A `<link>` tag is added to the HTML `<head>` to include the stylesheet
-4. Your HTML is styled without any extra work!
+2. During `builder.build()`, the theme's CSS is fetched from `https://keryagcihtl.github.io/HtmlForge/themes/themes.json`
+3. If the remote fetch fails, it falls back to local theme files in `themes/ThemeName/style.css`
+4. The CSS is saved to `generated/assets/style.css`
+5. A `<link>` tag is added to the HTML `<head>` to include the stylesheet
+6. Your HTML is styled without any extra work!
+
+**Theme Gallery**: Visit [https://keryagcihtl.github.io/HtmlForge/themes](https://keryagcihtl.github.io/HtmlForge/themes) to browse all available themes.
 
 ---
 
