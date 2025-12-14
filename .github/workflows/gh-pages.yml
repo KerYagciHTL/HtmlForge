@@ -33,6 +33,9 @@ jobs:
       - name: Generate HTML
         run: mvn exec:java -Dexec.mainClass="dev.kxrim.Main"
 
+      - name: Copy themes to generated directory
+        run: cp -r themes generated/themes
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
