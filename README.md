@@ -21,7 +21,10 @@ builder.heading(1, "Styled Page")
        .build();
 ```
 
-**Browse themes**: Open `themes/index.html` in your browser to see all available themes with live previews!
+**Live Sites:**
+- **Theme Gallery**: [https://keryagcihtl.github.io/HtmlForge/themes](https://keryagcihtl.github.io/HtmlForge/themes) - Browse all available themes with live previews
+- **Example Site**: [https://keryagcihtl.github.io/HtmlForge](https://keryagcihtl.github.io/HtmlForge) - See HtmlForge in action
+- **JSON API**: [https://keryagcihtl.github.io/HtmlForge/themes/themes.json](https://keryagcihtl.github.io/HtmlForge/themes/themes.json) - Theme data endpoint
 
 **Learn more**: Check out [themes/README.md](themes/README.md) for full documentation and how to create your own themes.
 
@@ -32,7 +35,7 @@ HtmlBuilder builder = new HtmlBuilder("My Page");
 
 builder.addElement(new Heading(1, "Welcome"));
 builder.addElement(new Paragraph("This is so much easier than strings."));
-builder.addElement(new Link("https://github.com", "Check it out"));
+builder.addElement(new Link("https://github.", "Check it out"));
 
 builder.build();
 ```
