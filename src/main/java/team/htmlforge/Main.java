@@ -1,6 +1,6 @@
 package team.htmlforge;
 
-import dev.kxrim.elements.*;
+import team.htmlforge.elements.*;
 import team.htmlforge.elements.Div;
 
 public class Main {

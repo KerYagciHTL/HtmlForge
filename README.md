@@ -12,7 +12,7 @@
   [![GitHub Issues](https://img.shields.io/github/issues/KerYagciHTL/HtmlForge?style=for-the-badge&logo=github)](https://github.com/KerYagciHTL/HtmlForge/issues)
   [![Contributors](https://img.shields.io/github/contributors/KerYagciHTL/HtmlForge?style=for-the-badge&logo=github)](https://github.com/KerYagciHTL/HtmlForge/graphs/contributors)
   
-  [Live Demo](https://keryagcihtl.github.io/HtmlForge) • [Theme Gallery](https://keryagcihtl.github.io/HtmlForge/themes)
+  [Live Demo](https://htmlforge-team.github.io/HtmlForge/) • [Theme Gallery](https://htmlforge-team.github.io/HtmlForge/themes)
   
 </div>
 
@@ -59,7 +59,7 @@ HtmlBuilder builder = new HtmlBuilder("My First Page");
 
 builder.heading(1, "Welcome to HtmlForge!")
        .paragraph("Building HTML has never been this easy.")
-       .link("https://github.com/KerYagciHTL/HtmlForge", "Star us on GitHub")
+       .link("https://github.com/htmlforge-team/HtmlForge", "Star us on GitHub")
        .build();
 ```
 
@@ -147,7 +147,7 @@ HtmlBuilder builder = new HtmlBuilder("My Page");
 
 builder.addElement(new Heading(1, "Welcome"));
 builder.addElement(new Paragraph("This is so much easier than strings."));
-builder.addElement(new Link("https://github.com/KerYagciHTL/HtmlForge", "Check it out"));
+builder.addElement(new Link("https://github.com/htmlforge-team/HtmlForge", "Check it out"));
 
 builder.build();
 ```
@@ -266,7 +266,7 @@ mvn clean install
 
 ```bash
 mvn compile
-mvn exec:java -Dexec.mainClass="dev.kxrim.Main"
+mvn exec:java -Dexec.mainClass="team.htmlforge.Main"
 ```
 
 Generated HTML will be in the `generated/` folder.
@@ -287,13 +287,14 @@ We love contributions! Whether it's bug fixes, new features, or documentation im
 
 ### Contributors
 
-<a href="https://github.com/KerYagciHTL/HtmlForge/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=KerYagciHTL/HtmlForge" />
+<a href="https://github.com/htmlforge-team/HtmlForge/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=htmlforge-team/HtmlForge" />
 </a>
 
 **Core Team:**
 - [Kerimcan Yagci](https://github.com/KerYagciHTL) - Creator & Maintainer
 - [Nico Haider](https://github.com/nhaiderhtl) - Tests Contributor
+- [Julian Mostbauer](https://github.com/Julian-Mostbauer) - Scripting Contributor
 
 ### How to Contribute
 
@@ -311,7 +312,7 @@ We love contributions! Whether it's bug fixes, new features, or documentation im
 **MIT License with Attribution**
 
 ```
-Copyright (c) 2025 KerYagciHTL
+Copyright (c) 2025 htmlforge-team
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -334,10 +335,10 @@ copies or substantial portions of the Software.
 
 If you find HtmlForge helpful, please consider giving us a star on GitHub!
 
-[![Star History Chart](https://api.star-history.com/svg?repos=KerYagciHTL/HtmlForge&type=Date)](https://star-history.com/#KerYagciHTL/HtmlForge&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=htmlforge-team/HtmlForge&type=Date)](https://star-history.com/#htmlforge-team/HtmlForge&Date)
 
 **Made with care by the HtmlForge Team**
 
-[Report Bug](https://github.com/KerYagciHTL/HtmlForge/issues) • [Request Feature](https://github.com/KerYagciHTL/HtmlForge/issues)
+[Report Bug](https://github.com/htmlforge-team/HtmlForge/issues) • [Request Feature](https://github.com/htmlforge-team/HtmlForge/issues)
 
 </div>

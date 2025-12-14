@@ -68,7 +68,7 @@ cd HtmlForge
 # Build it
 mvn clean install
 # Run the example
-mvn exec:java -Dexec.mainClass="dev.kxrim.Main"
+mvn exec:java -Dexec.mainClass="team.htmlforge.Main"
 # Check the generated HTML
 open generated/index.html
 ```

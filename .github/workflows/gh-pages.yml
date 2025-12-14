@@ -31,7 +31,7 @@ jobs:
         run: mvn test
 
       - name: Generate HTML
-        run: mvn exec:java -Dexec.mainClass="dev.kxrim.Main"
+        run: mvn exec:java -Dexec.mainClass="team.htmlforge.Main"
 
       - name: Copy themes to generated directory
         run: cp -r themes generated/themes
