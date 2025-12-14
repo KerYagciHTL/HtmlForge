@@ -6,7 +6,7 @@ public enum Theme {
     MINIMAL("Minimal");
 
     private final String themeName;
-    private static final String THEME_JSON_URL = "https://raw.githubusercontent.com/KerYagciHTL/HtmlForge/main/themes/themes.json";
+    private static final String THEME_JSON_URL = "https://keryagcihtl.github.io/HtmlForge/themes/themes.json";
 
     Theme(String themeName) {
         this.themeName = themeName;
