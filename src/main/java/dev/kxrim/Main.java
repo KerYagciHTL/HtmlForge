@@ -2,13 +2,6 @@ package dev.kxrim;
 
 import dev.kxrim.elements.*;
 
-/**
- * Main demonstration class showcasing my HtmlBuilder library.
- * Demonstrates all available HTML elements and their usage patterns.
- *
- * @author KerYagciHTL
- * @version 1.0
- */
 public class Main {
     private static final String PAGE_TITLE = "HtmlBuilder Full Feature Demonstration";
     private static final String GITHUB_URL = "https://github.com/KerYagciHTL/java-frontend";
@@ -17,7 +10,9 @@ public class Main {
     public static void main(String[] args) {
         HtmlBuilder builder = new HtmlBuilder(PAGE_TITLE);
 
-        // Using fluent API - chain all method calls
+        builder.useTheme(Theme.CODIX);
+
+        // Using fluent API
         builder.heading(1, "HtmlBuilder Feature Showcase")
                .heading(2, "All Available Methods Demonstrated")
                .paragraph("This page demonstrates all the features of the HtmlBuilder class.")
@@ -51,8 +46,7 @@ public class Main {
                .code("const x = 42;")
                .strong("Bold text")
                .emphasis("Italic text")
-               .horizontalRule()
-               .paragraph("Built with ❤️ using HtmlBuilder");
+               .horizontalRule();
 
         builder.heading(2, "Div Fluent API Demonstration")
                .paragraph("The Div class now supports fluent API for nesting elements:");

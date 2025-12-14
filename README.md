@@ -6,6 +6,25 @@ A Java library that makes building HTML way easier. Tired of writing HTML as str
 
 If you're a backend developer who's ever had to write HTML, you know the pain. String concatenation everywhere, escaped quotes making your eyes hurt, and messy code that's impossible to maintain. HtmlForge changes the game! Just create objects for your HTML elements, compose them together, and you're done. Clean, readable, and actually enjoyable to work with.
 
+## New: Theme System
+
+HtmlForge now includes a beautiful theme system! Apply professional styles to your HTML with just one line of code:
+
+```java
+HtmlBuilder builder = new HtmlBuilder("My Page");
+builder.useTheme(Theme.CODIX);  // Dark developer theme
+// or
+builder.useTheme(Theme.MINIMAL);  // Clean minimal theme
+
+builder.heading(1, "Styled Page")
+       .paragraph("Automatically styled!")
+       .build();
+```
+
+**Browse themes**: Open `themes/index.html` in your browser to see all available themes with live previews!
+
+**Learn more**: Check out [themes/README.md](themes/README.md) for full documentation and how to create your own themes.
+
 ## Quick Look
 
 ```java
