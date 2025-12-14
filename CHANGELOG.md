@@ -42,11 +42,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - MIT License
 
 ### Links
-- [GitHub Repository](https://github.com/KerYagciHTL/HtmlForge)
-- [Theme Gallery](https://keryagcihtl.github.io/HtmlForge/themes)
-- [Example Site](https://keryagcihtl.github.io/HtmlForge)
+- [GitHub Repository](https://github.com/htmlforge-team/HtmlForge)
+- [Theme Gallery](https://htmlforge-team.github.io/HtmlForge/themes)
+- [Example Site](https://htmlforge-team.github.io/HtmlForge)
 
 ---
 
-[0.1.0]: https://github.com/KerYagciHTL/HtmlForge/releases/tag/v0.1.0
+[0.1.0]: https://github.com/htmlforge-team/HtmlForge/releases/tag/v0.1.0
 

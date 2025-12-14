@@ -4,14 +4,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>io.github.keryagcihtl</groupId>
+    <groupId>io.github.htmlforge-team</groupId>
     <artifactId>htmlforge</artifactId>
     <version>0.1.0</version>
     <packaging>jar</packaging>
 
     <name>HtmlForge</name>
     <description>A fluent Java library for building HTML programmatically with theme support</description>
-    <url>https://github.com/KerYagciHTL/HtmlForge</url>
+    <url>https://github.com/htmlforge-team/HtmlForge</url>
 
     <licenses>
         <license>
@@ -32,12 +32,17 @@
             <name>nhaiderhtl</name>
             <url>https://github.com/nhaiderhtl</url>
         </developer>
+        <developer>
+            <id>julian-mostbauer</id>
+            <name>julian-mostbauer</name>
+            <url>https://github.com/julian-mostbauer</url>
+        </developer>
     </developers>
 
     <scm>
-        <connection>scm:git:git://github.com/KerYagciHTL/HtmlForge.git</connection>
-        <developerConnection>scm:git:ssh://github.com:KerYagciHTL/HtmlForge.git</developerConnection>
-        <url>https://github.com/KerYagciHTL/HtmlForge/tree/main</url>
+        <connection>scm:git:git://github.com/htmlforge-team/HtmlForge.git</connection>
+        <developerConnection>scm:git:ssh://github.com:htmlforge-team/HtmlForge.git</developerConnection>
+        <url>https://github.com/htmlforge-team/HtmlForge/tree/main</url>
     </scm>
 
     <properties>

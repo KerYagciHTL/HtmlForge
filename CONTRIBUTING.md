@@ -19,7 +19,7 @@ This is a friendly, open project and we welcome contributions of all kinds - whe
 ## Ways to Contribute
 ### Reporting Bugs
 Found something broken? Let us know! 
-Just open an [issue](https://github.com/KerYagciHTL/HtmlForge/issues) and tell us:
+Just open an [issue](https://github.com/htmlforge-team/HtmlForge/issues) and tell us:
 - What you were trying to do
 - What happened instead
 - Any error messages you saw
@@ -157,7 +157,7 @@ Check out [themes/README.md](themes/README.md) for more examples.
 ## Getting Help
 ### Questions?
 - **Open an issue** with the `question` label
-- **Start a discussion** on [GitHub Discussions](https://github.com/KerYagciHTL/HtmlForge/discussions)
+- **Start a discussion** on [GitHub Discussions](https://github.com/htmlforge-team/HtmlForge/discussions)
 - **Check the docs** in [README.md](README.md)
 ### Stuck on Something?
 That's totally normal! Don't hesitate to:

@@ -3,14 +3,14 @@
   
   **A fluent Java library for building HTML programmatically**
   
-  [![Maven Central](https://img.shields.io/maven-central/v/io.github.keryagcihtl/htmlforge?style=for-the-badge&logo=apache-maven&logoColor=white)](https://central.sonatype.com/artifact/io.github.keryagcihtl/htmlforge)
+  [![Maven Central](https://img.shields.io/maven-central/v/io.github.htmlforge-team/htmlforge?style=for-the-badge&logo=apache-maven&logoColor=white)](https://central.sonatype.com/artifact/io.github.htmlforge-team/htmlforge)
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
   [![Java Version](https://img.shields.io/badge/Java-21%2B-orange?style=for-the-badge&logo=openjdk&logoColor=white)](https://www.oracle.com/java/)
   
-  [![GitHub Stars](https://img.shields.io/github/stars/KerYagciHTL/HtmlForge?style=for-the-badge&logo=github)](https://github.com/KerYagciHTL/HtmlForge/stargazers)
-  [![GitHub Forks](https://img.shields.io/github/forks/KerYagciHTL/HtmlForge?style=for-the-badge&logo=github)](https://github.com/KerYagciHTL/HtmlForge/network/members)
-  [![GitHub Issues](https://img.shields.io/github/issues/KerYagciHTL/HtmlForge?style=for-the-badge&logo=github)](https://github.com/KerYagciHTL/HtmlForge/issues)
-  [![Contributors](https://img.shields.io/github/contributors/KerYagciHTL/HtmlForge?style=for-the-badge&logo=github)](https://github.com/KerYagciHTL/HtmlForge/graphs/contributors)
+  [![GitHub Stars](https://img.shields.io/github/stars/htmlforge-team/HtmlForge?style=for-the-badge&logo=github)](https://github.com/htmlforge-team/HtmlForge/stargazers)
+  [![GitHub Forks](https://img.shields.io/github/forks/htmlforge-team/HtmlForge?style=for-the-badge&logo=github)](https://github.com/htmlforge-team/HtmlForge/network/members)
+  [![GitHub Issues](https://img.shields.io/github/issues/htmlforge-team/HtmlForge?style=for-the-badge&logo=github)](https://github.com/htmlforge-team/HtmlForge/issues)
+  [![Contributors](https://img.shields.io/github/contributors/htmlforge-team/HtmlForge?style=for-the-badge&logo=github)](https://github.com/htmlforge-team/HtmlForge/graphs/contributors)
   
   [Live Demo](https://htmlforge-team.github.io/HtmlForge/) • [Theme Gallery](https://htmlforge-team.github.io/HtmlForge/themes)
   
@@ -69,7 +69,6 @@ builder.heading(1, "Welcome to HtmlForge!")
 
 ## Installation
 
-
 <details open>
 <summary><b>Maven</b></summary>
 
@@ -105,8 +104,9 @@ dependencies {
 
 </details>
 
-> **Note:** Replace `0.1.0` with the latest version from [Maven Central](https://central.sonatype.com/artifact/io.github.keryagcihtl/htmlforge)
-
+> **Note:** Replace `0.1.0` with the latest version from [Maven Central](https://central.sonatype.com/artifact/io.github.htmlforge-team/htmlforge)
+---
+> **Note:** This will soon be changed to `io.github.htmlforge-team` once we set up the organization properly.
 ---
 
 ## Theme System
