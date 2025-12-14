@@ -3,7 +3,8 @@ package dev.kxrim;
 public enum Theme {
     CODIX("Codix"),
 
-    MINIMAL("Minimal");
+    MINIMAL("Minimal"),
+    MINIMAL_DARK("MinimalDark"),;
 
     private final String themeName;
     private static final String THEME_JSON_URL = "https://keryagcihtl.github.io/HtmlForge/themes/themes.json";
