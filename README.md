@@ -284,6 +284,8 @@ mvn test
 
 We love contributions! Whether it's bug fixes, new features, or documentation improvements.
 
+**[Read our Contributing Guide](CONTRIBUTING.md)** for detailed information on how to get started.
+
 ### Contributors
 
 <a href="https://github.com/KerYagciHTL/HtmlForge/graphs/contributors">
