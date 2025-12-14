@@ -35,7 +35,7 @@ HtmlBuilder builder = new HtmlBuilder("My Page");
 
 builder.addElement(new Heading(1, "Welcome"));
 builder.addElement(new Paragraph("This is so much easier than strings."));
-builder.addElement(new Link("https://github.", "Check it out"));
+builder.addElement(new Link("https://github.com/KerYagciHTL/HtmlForge/tree/main", "Check it out"));
 
 builder.build();
 ```
@@ -159,6 +159,8 @@ Because writing HTML in Java strings sucks. This way you get:
 - Your IDE actually helps you with autocomplete
 - Catch mistakes when you compile, not when you run
 - Easier to read and modify
+
+**Especially useful when you need to build HTML dynamically** - think reports, automated emails, or small web pages that need to be generated on the fly. Way better than concatenating strings or messing with templates.
 
 ## Contributing
 - Kerimcan Yagci
