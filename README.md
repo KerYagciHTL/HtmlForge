@@ -74,9 +74,9 @@ builder.heading(1, "Welcome to HtmlForge!")
 
 ```xml
 <dependency>
-    <groupId>io.github.keryagcihtl</groupId>
-    <artifactId>htmlforge</artifactId>
-    <version>0.1.0</version>
+  <groupId>io.github.htmlforge-team</groupId>
+  <artifactId>htmlforge</artifactId>
+  <version>0.1.0</version>
 </dependency>
 ```
 
@@ -87,7 +87,7 @@ builder.heading(1, "Welcome to HtmlForge!")
 
 ```groovy
 dependencies {
-    implementation 'io.github.keryagcihtl:htmlforge:0.1.0'
+    implementation("io.github.htmlforge-team:htmlforge:0.1.0")
 }
 ```
 
@@ -98,16 +98,11 @@ dependencies {
 
 ```kotlin
 dependencies {
-    implementation("io.github.keryagcihtl:htmlforge:0.1.0")
+    implementation("io.github.htmlforge-team:htmlforge:0.1.0")
 }
 ```
 
 </details>
-
-> **Note:** Replace `0.1.0` with the latest version from [Maven Central](https://central.sonatype.com/artifact/io.github.htmlforge-team/htmlforge)
----
-> **Note:** This will soon be changed to `io.github.htmlforge-team` once we set up the organization properly.
----
 
 ## Theme System
 
