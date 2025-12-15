@@ -304,21 +304,7 @@ We love contributions! Whether it's bug fixes, new features, or documentation im
 
 ## License
 
-**MIT License with Attribution**
-
-```
-Copyright (c) 2025 htmlforge-team
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-```
+[MIT License with Attribution](https://mit-license.org/)
 
 **TL;DR:** Use it however you want, just keep the credits if you modify or redistribute it.
 
