@@ -132,11 +132,17 @@
         }
 
         .theme-preview {
-            height: 320px;
+            height: 500px;
             overflow: hidden;
             position: relative;
             background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.3) 100%);
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .theme-preview-iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
         }
 
         .theme-preview-content {
@@ -413,6 +419,27 @@
                 padding: 30px 25px;
             }
         }
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+
+        /* Theme Preview Iframe Styles - Auto-generated */
+        .theme-preview-iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+        /* End Theme Preview Iframe Styles */
     </style>
 </head>
 <body>
@@ -434,47 +461,19 @@
         </div>
 
         <div class="theme-grid">
-            <!-- Codix Theme -->
-            <div class="theme-card">
-                <div class="theme-preview">
-                    <div class="theme-preview-content codix-preview">
-                        <h1>Codix Theme</h1>
-                        <p>A dark developer-focused theme with terminal aesthetics</p>
-                        <button>Click Me</button>
-                        <div class="demo-div">
-                            <p>Styled div with green accent border</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="theme-info">
-                    <h2>Codix</h2>
-                    <p>Terminal vibes meet modern design. Dark background with that signature neon green glow developers love. Works great for portfolios, docs, or any tech project where you want that hacker aesthetic.</p>
-                    <div class="theme-tags">
-                        <span class="theme-tag">Dark</span>
-                        <span class="theme-tag">Developer</span>
-                        <span class="theme-tag">Terminal</span>
-                    </div>
-                    <div class="code-block">
-<span class="keyword">builder</span>.<span class="method">useTheme</span>(<span class="enum">Theme.CODIX</span>);
-                    </div>
-                </div>
-            </div>
-
             <!-- Minimal Theme -->
             <div class="theme-card">
                 <div class="theme-preview">
-                    <div class="theme-preview-content minimal-preview">
-                        <h1>Minimal Theme</h1>
-                        <p>Clean and simple design for any project</p>
-                        <button>Click Me</button>
-                        <div class="demo-div">
-                            <p>Subtle styled div element</p>
-                        </div>
-                    </div>
+                    <iframe 
+                        class="theme-preview-iframe" 
+                        src="data:text/html;base64,PCFET0NUWVBFIGh0bWw+CjxodG1sPgo8aGVhZD4KICAgIDxtZXRhIGNoYXJzZXQ9IlVURi04Ij4KICAgIDxzdHlsZT4KKiB7CiAgICBtYXJnaW46IDA7CiAgICBwYWRkaW5nOiAwOwogICAgYm94LXNpemluZzogYm9yZGVyLWJveDsKfQoKYm9keSB7CiAgICBmb250LWZhbWlseTogLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCAnU2Vnb2UgVUknLCAnUm9ib3RvJywgJ094eWdlbicsICdVYnVudHUnLCBzYW5zLXNlcmlmOwogICAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZmZmZjsKICAgIGNvbG9yOiAjMzMzMzMzOwogICAgbGluZS1oZWlnaHQ6IDEuODsKICAgIHBhZGRpbmc6IDQwcHggMjBweDsKICAgIG1heC13aWR0aDogODAwcHg7CiAgICBtYXJnaW46IDAgYXV0bzsKfQoKaDEsIGgyLCBoMywgaDQsIGg1LCBoNiB7CiAgICBjb2xvcjogIzExMTExMTsKICAgIG1hcmdpbjogMzBweCAwIDE1cHggMDsKICAgIGZvbnQtd2VpZ2h0OiA2MDA7CiAgICBsZXR0ZXItc3BhY2luZzogLTAuNXB4Owp9CgpoMSB7CiAgICBmb250LXNpemU6IDIuNWVtOwogICAgYm9yZGVyLWJvdHRvbTogM3B4IHNvbGlkICMxMTExMTE7CiAgICBwYWRkaW5nLWJvdHRvbTogMTBweDsKfQoKaDIgewogICAgZm9udC1zaXplOiAyZW07CiAgICBib3JkZXItYm90dG9tOiAycHggc29saWQgI2UwZTBlMDsKICAgIHBhZGRpbmctYm90dG9tOiA4cHg7Cn0KCmgzIHsKICAgIGZvbnQtc2l6ZTogMS41ZW07Cn0KCmg0IHsKICAgIGZvbnQtc2l6ZTogMS4yNWVtOwp9CgpoNSB7CiAgICBmb250LXNpemU6IDEuMWVtOwp9CgpoNiB7CiAgICBmb250LXNpemU6IDFlbTsKfQoKcCB7CiAgICBtYXJnaW46IDE1cHggMDsKICAgIGNvbG9yOiAjNTU1NTU1Owp9CgphIHsKICAgIGNvbG9yOiAjMDA2NmNjOwogICAgdGV4dC1kZWNvcmF0aW9uOiBub25lOwogICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkIHRyYW5zcGFyZW50OwogICAgdHJhbnNpdGlvbjogYm9yZGVyLWJvdHRvbSAwLjJzIGVhc2U7Cn0KCmE6aG92ZXIgewogICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkICMwMDY2Y2M7Cn0KCmJ1dHRvbiB7CiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMTExMTExOwogICAgY29sb3I6ICNmZmZmZmY7CiAgICBib3JkZXI6IG5vbmU7CiAgICBwYWRkaW5nOiAxMnB4IDI0cHg7CiAgICBmb250LXNpemU6IDAuOTVlbTsKICAgIGZvbnQtZmFtaWx5OiBpbmhlcml0OwogICAgY3Vyc29yOiBwb2ludGVyOwogICAgYm9yZGVyLXJhZGl1czogNHB4OwogICAgdHJhbnNpdGlvbjogYmFja2dyb3VuZC1jb2xvciAwLjJzIGVhc2U7CiAgICBtYXJnaW46IDVweDsKfQoKYnV0dG9uOmhvdmVyIHsKICAgIGJhY2tncm91bmQtY29sb3I6ICMzMzMzMzM7Cn0KCmRpdiB7CiAgICBtYXJnaW46IDIwcHggMDsKICAgIHBhZGRpbmc6IDIwcHg7CiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmFmYWZhOwogICAgYm9yZGVyLXJhZGl1czogNHB4Owp9CgouaGlnaGxpZ2h0ZWQgewogICAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZjllNjsKICAgIGJvcmRlci1sZWZ0OiA0cHggc29saWQgI2ZmY2MwMDsKfQoKaW5wdXQsIHRleHRhcmVhIHsKICAgIGJhY2tncm91bmQtY29sb3I6ICNmZmZmZmY7CiAgICBib3JkZXI6IDJweCBzb2xpZCAjZTBlMGUwOwogICAgY29sb3I6ICMzMzMzMzM7CiAgICBwYWRkaW5nOiAxMHB4IDEycHg7CiAgICBmb250LWZhbWlseTogaW5oZXJpdDsKICAgIGZvbnQtc2l6ZTogMWVtOwogICAgYm9yZGVyLXJhZGl1czogNHB4OwogICAgbWFyZ2luOiA1cHggMDsKICAgIHdpZHRoOiAxMDAlOwogICAgbWF4LXdpZHRoOiA0MDBweDsKICAgIHRyYW5zaXRpb246IGJvcmRlci1jb2xvciAwLjJzIGVhc2U7Cn0KCmlucHV0OmZvY3VzLCB0ZXh0YXJlYTpmb2N1cyB7CiAgICBvdXRsaW5lOiBub25lOwogICAgYm9yZGVyLWNvbG9yOiAjMTExMTExOwp9Cgp0ZXh0YXJlYSB7CiAgICByZXNpemU6IHZlcnRpY2FsOwogICAgbWluLWhlaWdodDogMTAwcHg7Cn0KCnVsLCBvbCB7CiAgICBtYXJnaW46IDE1cHggMCAxNXB4IDMwcHg7CiAgICBjb2xvcjogIzU1NTU1NTsKfQoKbGkgewogICAgbWFyZ2luOiAxMHB4IDA7Cn0KCmJsb2NrcXVvdGUgewogICAgYm9yZGVyLWxlZnQ6IDRweCBzb2xpZCAjZTBlMGUwOwogICAgcGFkZGluZy1sZWZ0OiAyMHB4OwogICAgbWFyZ2luOiAyMHB4IDA7CiAgICBmb250LXN0eWxlOiBpdGFsaWM7CiAgICBjb2xvcjogIzc3Nzc3NzsKICAgIGJhY2tncm91bmQtY29sb3I6ICNmYWZhZmE7CiAgICBwYWRkaW5nOiAxNXB4IDIwcHg7CiAgICBib3JkZXItcmFkaXVzOiA0cHg7Cn0KCmNvZGUgewogICAgYmFja2dyb3VuZC1jb2xvcjogI2Y1ZjVmNTsKICAgIGNvbG9yOiAjZDczYTQ5OwogICAgcGFkZGluZzogM3B4IDhweDsKICAgIGJvcmRlci1yYWRpdXM6IDNweDsKICAgIGZvbnQtZmFtaWx5OiAnQ291cmllciBOZXcnLCBDb3VyaWVyLCBtb25vc3BhY2U7CiAgICBmb250LXNpemU6IDAuOWVtOwp9CgpzdHJvbmcgewogICAgY29sb3I6ICMxMTExMTE7CiAgICBmb250LXdlaWdodDogNzAwOwp9CgplbSB7CiAgICBjb2xvcjogIzU1NTU1NTsKICAgIGZvbnQtc3R5bGU6IGl0YWxpYzsKfQoKaHIgewogICAgYm9yZGVyOiBub25lOwogICAgaGVpZ2h0OiAxcHg7CiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZTBlMGUwOwogICAgbWFyZ2luOiA0MHB4IDA7Cn0KCmltZyB7CiAgICBtYXgtd2lkdGg6IDEwMCU7CiAgICBoZWlnaHQ6IGF1dG87CiAgICBib3JkZXItcmFkaXVzOiA0cHg7CiAgICBtYXJnaW46IDE1cHggMDsKICAgIGRpc3BsYXk6IGJsb2NrOwp9CgovKiBDb250YWluZXIgYW5kIHdyYXBwZXIgc3R5bGVzICovCi5jb250YWluZXIsIC53cmFwcGVyIHsKICAgIGJhY2tncm91bmQtY29sb3I6ICNmNWY1ZjU7CiAgICBib3JkZXI6IDFweCBzb2xpZCAjZTBlMGUwOwogICAgYm9yZGVyLXJhZGl1czogNHB4OwogICAgcGFkZGluZzogMjVweDsKICAgIG1hcmdpbjogMjVweCAwOwp9CgouaW5uZXItc2VjdGlvbiB7CiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmZmZmZmOwogICAgYm9yZGVyLWxlZnQ6IDNweCBzb2xpZCAjY2NjY2NjOwp9CgouaGlnaGxpZ2h0IHsKICAgIGJhY2tncm91bmQtY29sb3I6ICNmZmZmZmY7CiAgICBib3JkZXI6IDJweCBzb2xpZCAjMTExMTExOwp9CgogICAgPC9zdHlsZT4KPC9oZWFkPgo8Ym9keT4KICAgIDxoMT5NaW5pbWFsIFRoZW1lPC9oMT4KICAgIDxwPkV4cGVyaWVuY2UgdGhlIGJlYXV0aWZ1bCBzdHlsaW5nIG9mIHRoaXMgdGhlbWUuPC9wPgogICAgPGJ1dHRvbj5DbGljayBNZTwvYnV0dG9uPgogICAgPGRpdiBjbGFzcz0iaGlnaGxpZ2h0ZWQiPgogICAgICAgIDxwPlRoaXMgaXMgYSBoaWdobGlnaHRlZCBzZWN0aW9uIHdpdGggY3VzdG9tIHN0eWxpbmcuPC9wPgogICAgPC9kaXY+CjwvYm9keT4KPC9odG1sPg=="
+                        sandbox="allow-same-origin"
+                        scrolling="no"
+                    ></iframe>
                 </div>
                 <div class="theme-info">
                     <h2>Minimal</h2>
-                    <p>Clean, simple, no BS. Just good typography and lots of whitespace. If you want your content to do the talking without fancy colors getting in the way, this is it.</p>
+                    <p>A clean, minimal theme with subtle styling and excellent readability. Great for blogs, documentation, and content-focused websites. Uses system fonts and neutral colors to ensure your content takes center stage.</p>
                     <div class="theme-tags">
                         <span class="theme-tag">Light</span>
                         <span class="theme-tag">Clean</span>
@@ -486,21 +485,43 @@
                 </div>
             </div>
 
+            <!-- Codix Theme -->
+            <div class="theme-card">
+                <div class="theme-preview">
+                    <iframe 
+                        class="theme-preview-iframe" 
+                        src="data:text/html;base64,PCFET0NUWVBFIGh0bWw+CjxodG1sPgo8aGVhZD4KICAgIDxtZXRhIGNoYXJzZXQ9IlVURi04Ij4KICAgIDxzdHlsZT4KKiB7CiAgICBtYXJnaW46IDA7CiAgICBwYWRkaW5nOiAwOwogICAgYm94LXNpemluZzogYm9yZGVyLWJveDsKfQoKYm9keSB7CiAgICBmb250LWZhbWlseTogJ0NvbnNvbGFzJywgJ01vbmFjbycsICdDb3VyaWVyIE5ldycsIG1vbm9zcGFjZTsKICAgIGJhY2tncm91bmQtY29sb3I6ICMwZDExMTc7CiAgICBjb2xvcjogIzAwZmY0MTsKICAgIGxpbmUtaGVpZ2h0OiAxLjY7CiAgICBwYWRkaW5nOiAyMHB4OwogICAgbWF4LXdpZHRoOiAxMjAwcHg7CiAgICBtYXJnaW46IDAgYXV0bzsKfQoKaDEsIGgyLCBoMywgaDQsIGg1LCBoNiB7CiAgICBjb2xvcjogIzAwZmY0MTsKICAgIG1hcmdpbjogMjBweCAwIDEwcHggMDsKICAgIGZvbnQtd2VpZ2h0OiA3MDA7CiAgICB0ZXh0LXNoYWRvdzogMCAwIDEwcHggcmdiYSgwLCAyNTUsIDY1LCAwLjMpOwp9CgpoMSB7CiAgICBmb250LXNpemU6IDIuNWVtOwogICAgYm9yZGVyLWJvdHRvbTogMnB4IHNvbGlkICMwMGZmNDE7CiAgICBwYWRkaW5nLWJvdHRvbTogMTBweDsKfQoKaDIgewogICAgZm9udC1zaXplOiAyZW07CiAgICBib3JkZXItYm90dG9tOiAxcHggc29saWQgIzFmNmZlYjsKfQoKaDMgewogICAgZm9udC1zaXplOiAxLjVlbTsKICAgIGNvbG9yOiAjMWY2ZmViOwp9CgpwIHsKICAgIG1hcmdpbjogMTVweCAwOwogICAgY29sb3I6ICNjOWQxZDk7Cn0KCmEgewogICAgY29sb3I6ICM1OGE2ZmY7CiAgICB0ZXh0LWRlY29yYXRpb246IG5vbmU7CiAgICB0cmFuc2l0aW9uOiBhbGwgMC4zcyBlYXNlOwp9CgphOmhvdmVyIHsKICAgIGNvbG9yOiAjMDBmZjQxOwogICAgdGV4dC1zaGFkb3c6IDAgMCA1cHggcmdiYSgwLCAyNTUsIDY1LCAwLjUpOwp9CgpidXR0b24gewogICAgYmFja2dyb3VuZC1jb2xvcjogIzIzODYzNjsKICAgIGNvbG9yOiAjZmZmZmZmOwogICAgYm9yZGVyOiAycHggc29saWQgIzAwZmY0MTsKICAgIHBhZGRpbmc6IDEwcHggMjBweDsKICAgIGZvbnQtc2l6ZTogMWVtOwogICAgZm9udC1mYW1pbHk6ICdDb25zb2xhcycsIG1vbm9zcGFjZTsKICAgIGN1cnNvcjogcG9pbnRlcjsKICAgIGJvcmRlci1yYWRpdXM6IDZweDsKICAgIHRyYW5zaXRpb246IGFsbCAwLjNzIGVhc2U7CiAgICBtYXJnaW46IDVweDsKfQoKYnV0dG9uOmhvdmVyIHsKICAgIGJhY2tncm91bmQtY29sb3I6ICMyZWEwNDM7CiAgICBib3gtc2hhZG93OiAwIDAgMTVweCByZ2JhKDAsIDI1NSwgNjUsIDAuNCk7CiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoLTJweCk7Cn0KCmRpdiB7CiAgICBtYXJnaW46IDE1cHggMDsKICAgIHBhZGRpbmc6IDE1cHg7CiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMTYxYjIyOwogICAgYm9yZGVyLXJhZGl1czogNnB4OwogICAgYm9yZGVyLWxlZnQ6IDRweCBzb2xpZCAjMDBmZjQxOwp9CgouaGlnaGxpZ2h0ZWQgewogICAgYmFja2dyb3VuZC1jb2xvcjogIzFmNmZlYjIyOwogICAgYm9yZGVyLWxlZnQ6IDRweCBzb2xpZCAjMWY2ZmViOwogICAgYm94LXNoYWRvdzogMCAwIDEwcHggcmdiYSgzMSwgMTExLCAyMzUsIDAuMik7Cn0KCmlucHV0LCB0ZXh0YXJlYSB7CiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMGQxMTE3OwogICAgYm9yZGVyOiAycHggc29saWQgIzMwMzYzZDsKICAgIGNvbG9yOiAjYzlkMWQ5OwogICAgcGFkZGluZzogMTBweDsKICAgIGZvbnQtZmFtaWx5OiAnQ29uc29sYXMnLCBtb25vc3BhY2U7CiAgICBmb250LXNpemU6IDFlbTsKICAgIGJvcmRlci1yYWRpdXM6IDZweDsKICAgIG1hcmdpbjogNXB4IDA7CiAgICB3aWR0aDogMTAwJTsKICAgIG1heC13aWR0aDogNDAwcHg7Cn0KCmlucHV0OmZvY3VzLCB0ZXh0YXJlYTpmb2N1cyB7CiAgICBvdXRsaW5lOiBub25lOwogICAgYm9yZGVyLWNvbG9yOiAjMDBmZjQxOwogICAgYm94LXNoYWRvdzogMCAwIDVweCByZ2JhKDAsIDI1NSwgNjUsIDAuMyk7Cn0KCnRleHRhcmVhIHsKICAgIHJlc2l6ZTogdmVydGljYWw7CiAgICBtaW4taGVpZ2h0OiAxMDBweDsKfQoKdWwsIG9sIHsKICAgIG1hcmdpbjogMTVweCAwIDE1cHggMzBweDsKICAgIGNvbG9yOiAjYzlkMWQ5Owp9CgpsaSB7CiAgICBtYXJnaW46IDhweCAwOwp9CgpibG9ja3F1b3RlIHsKICAgIGJvcmRlci1sZWZ0OiA0cHggc29saWQgIzFmNmZlYjsKICAgIHBhZGRpbmctbGVmdDogMjBweDsKICAgIG1hcmdpbjogMjBweCAwOwogICAgZm9udC1zdHlsZTogaXRhbGljOwogICAgY29sb3I6ICM4Yjk0OWU7CiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMTYxYjIyOwogICAgcGFkZGluZzogMTVweCAyMHB4OwogICAgYm9yZGVyLXJhZGl1czogNnB4Owp9Cgpjb2RlIHsKICAgIGJhY2tncm91bmQtY29sb3I6ICMxNjFiMjI7CiAgICBjb2xvcjogI2ZmN2I3MjsKICAgIHBhZGRpbmc6IDNweCA4cHg7CiAgICBib3JkZXItcmFkaXVzOiA0cHg7CiAgICBmb250LWZhbWlseTogJ0NvbnNvbGFzJywgJ01vbmFjbycsIG1vbm9zcGFjZTsKICAgIGZvbnQtc2l6ZTogMC45ZW07CiAgICBib3JkZXI6IDFweCBzb2xpZCAjMzAzNjNkOwp9CgpzdHJvbmcgewogICAgY29sb3I6ICMwMGZmNDE7CiAgICBmb250LXdlaWdodDogYm9sZDsKfQoKZW0gewogICAgY29sb3I6ICMxZjZmZWI7CiAgICBmb250LXN0eWxlOiBpdGFsaWM7Cn0KCmhyIHsKICAgIGJvcmRlcjogbm9uZTsKICAgIGhlaWdodDogMnB4OwogICAgYmFja2dyb3VuZDogbGluZWFyLWdyYWRpZW50KHRvIHJpZ2h0LCAjMDBmZjQxLCAjMWY2ZmViLCAjMDBmZjQxKTsKICAgIG1hcmdpbjogMzBweCAwOwogICAgYm94LXNoYWRvdzogMCAwIDEwcHggcmdiYSgwLCAyNTUsIDY1LCAwLjMpOwp9CgppbWcgewogICAgbWF4LXdpZHRoOiAxMDAlOwogICAgaGVpZ2h0OiBhdXRvOwogICAgYm9yZGVyLXJhZGl1czogOHB4OwogICAgYm9yZGVyOiAycHggc29saWQgIzMwMzYzZDsKICAgIG1hcmdpbjogMTBweCAwOwogICAgYm94LXNoYWRvdzogMCA0cHggMTBweCByZ2JhKDAsIDAsIDAsIDAuNSk7Cn0KCi8qIENvbnRhaW5lciBhbmQgd3JhcHBlciBzdHlsZXMgKi8KLmNvbnRhaW5lciwgLndyYXBwZXIgewogICAgYmFja2dyb3VuZC1jb2xvcjogIzBkMTExNzsKICAgIGJvcmRlcjogMnB4IHNvbGlkICMzMDM2M2Q7CiAgICBib3JkZXItcmFkaXVzOiA4cHg7CiAgICBwYWRkaW5nOiAyMHB4OwogICAgbWFyZ2luOiAyMHB4IDA7Cn0KCi5pbm5lci1zZWN0aW9uIHsKICAgIGJhY2tncm91bmQtY29sb3I6ICMxNjFiMjI7CiAgICBib3JkZXItbGVmdDogM3B4IHNvbGlkICMxZjZmZWI7Cn0KCi5oaWdobGlnaHQgewogICAgYmFja2dyb3VuZDogbGluZWFyLWdyYWRpZW50KDEzNWRlZywgIzFmNmZlYjIyLCAjMDBmZjQxMjIpOwogICAgYm9yZGVyOiAycHggc29saWQgIzAwZmY0MTsKfQoKICAgIDwvc3R5bGU+CjwvaGVhZD4KPGJvZHk+CiAgICA8aDE+Q29kaXggVGhlbWU8L2gxPgogICAgPHA+RXhwZXJpZW5jZSB0aGUgYmVhdXRpZnVsIHN0eWxpbmcgb2YgdGhpcyB0aGVtZS48L3A+CiAgICA8YnV0dG9uPkNsaWNrIE1lPC9idXR0b24+CiAgICA8ZGl2IGNsYXNzPSJoaWdobGlnaHRlZCI+CiAgICAgICAgPHA+VGhpcyBpcyBhIGhpZ2hsaWdodGVkIHNlY3Rpb24gd2l0aCBjdXN0b20gc3R5bGluZy48L3A+CiAgICA8L2Rpdj4KPC9ib2R5Pgo8L2h0bWw+"
+                        sandbox="allow-same-origin"
+                        scrolling="no"
+                    ></iframe>
+                </div>
+                <div class="theme-info">
+                    <h2>Codix</h2>
+                    <p>A sleek dark theme inspired by terminal aesthetics and modern code editors. Perfect for developer portfolios, documentation sites, and technical projects. Features vibrant green and blue accents on a dark background for excellent contrast.</p>
+                    <div class="theme-tags">
+                        <span class="theme-tag">Dark</span>
+                        <span class="theme-tag">Developer</span>
+                        <span class="theme-tag">Terminal</span>
+                    </div>
+                    <div class="code-block">
+<span class="keyword">builder</span>.<span class="method">useTheme</span>(<span class="enum">Theme.CODIX</span>);
+                    </div>
+                </div>
+            </div>
+
             <!-- Minimal Dark Theme -->
             <div class="theme-card">
                 <div class="theme-preview">
-                    <div class="theme-preview-content minimaldark-preview">
-                        <h1>Minimal Dark Theme</h1>
-                        <p>A dark version of the minimal theme</p>
-                        <button>Click Me</button>
-                        <div class="demo-div">
-                            <p>Subtle styled div element</p>
-                        </div>
-                    </div>
+                    <iframe 
+                        class="theme-preview-iframe" 
+                        src="data:text/html;base64,PCFET0NUWVBFIGh0bWw+CjxodG1sPgo8aGVhZD4KICAgIDxtZXRhIGNoYXJzZXQ9IlVURi04Ij4KICAgIDxzdHlsZT4KKiB7CiAgICBtYXJnaW46IDA7CiAgICBwYWRkaW5nOiAwOwogICAgYm94LXNpemluZzogYm9yZGVyLWJveDsKfQoKOnJvb3QgewogICAgLS1iZzogIzBiMGQxMDsKICAgIC0tcGFuZWw6ICMwZjExMTU7CiAgICAtLW11dGVkOiAjYmZjOGNmOwogICAgLS10ZXh0OiAjZTZlZWY2OwogICAgLS1oZWFkaW5nOiAjZmZmZmZmOwogICAgLS1ib3JkZXI6ICMyMjI2MmE7CiAgICAtLWFjY2VudDogIzU4YTZmZjsKICAgIC0tYWNjZW50LXN0cm9uZzogIzFmNmZlYjsKICAgIC0tZGFuZ2VyOiAjZmZiODZiOwogICAgLS1jb2RlLWJnOiAjMDExNjI3OwogICAgLS1jb2RlLWZnOiAjZmZkOGE2Owp9Cgpib2R5IHsKICAgIGZvbnQtZmFtaWx5OiAtYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsICdTZWdvZSBVSScsICdSb2JvdG8nLCAnT3h5Z2VuJywgJ1VidW50dScsIHNhbnMtc2VyaWY7CiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1iZyk7CiAgICBjb2xvcjogdmFyKC0tdGV4dCk7CiAgICBsaW5lLWhlaWdodDogMS44OwogICAgcGFkZGluZzogNDBweCAyMHB4OwogICAgbWF4LXdpZHRoOiA4MDBweDsKICAgIG1hcmdpbjogMCBhdXRvOwp9CgpoMSwgaDIsIGgzLCBoNCwgaDUsIGg2IHsKICAgIGNvbG9yOiB2YXIoLS1oZWFkaW5nKTsKICAgIG1hcmdpbjogMzBweCAwIDE1cHggMDsKICAgIGZvbnQtd2VpZ2h0OiA2MDA7CiAgICBsZXR0ZXItc3BhY2luZzogLTAuNXB4Owp9CgpoMSB7CiAgICBmb250LXNpemU6IDIuNWVtOwogICAgYm9yZGVyLWJvdHRvbTogM3B4IHNvbGlkIHZhcigtLWJvcmRlcik7CiAgICBwYWRkaW5nLWJvdHRvbTogMTBweDsKfQoKaDIgewogICAgZm9udC1zaXplOiAyZW07CiAgICBib3JkZXItYm90dG9tOiAycHggc29saWQgcmdiYSgyNTUsMjU1LDI1NSwwLjA0KTsKICAgIHBhZGRpbmctYm90dG9tOiA4cHg7Cn0KCmgzIHsKICAgIGZvbnQtc2l6ZTogMS41ZW07Cn0KCmg0IHsKICAgIGZvbnQtc2l6ZTogMS4yNWVtOwp9CgpoNSB7CiAgICBmb250LXNpemU6IDEuMWVtOwp9CgpoNiB7CiAgICBmb250LXNpemU6IDFlbTsKfQoKcCB7CiAgICBtYXJnaW46IDE1cHggMDsKICAgIGNvbG9yOiB2YXIoLS1tdXRlZCk7Cn0KCmEgewogICAgY29sb3I6IHZhcigtLWFjY2VudCk7CiAgICB0ZXh0LWRlY29yYXRpb246IG5vbmU7CiAgICBib3JkZXItYm90dG9tOiAxcHggc29saWQgdHJhbnNwYXJlbnQ7CiAgICB0cmFuc2l0aW9uOiBib3JkZXItYm90dG9tIDAuMnMgZWFzZSwgY29sb3IgMC4xNXMgZWFzZTsKfQoKYTpob3ZlciB7CiAgICBib3JkZXItYm90dG9tOiAxcHggc29saWQgdmFyKC0tYWNjZW50KTsKICAgIGNvbG9yOiB2YXIoLS1hY2NlbnQtc3Ryb25nKTsKfQoKYnV0dG9uIHsKICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWFjY2VudC1zdHJvbmcpOwogICAgY29sb3I6ICNmZmZmZmY7CiAgICBib3JkZXI6IG5vbmU7CiAgICBwYWRkaW5nOiAxMnB4IDI0cHg7CiAgICBmb250LXNpemU6IDAuOTVlbTsKICAgIGZvbnQtZmFtaWx5OiBpbmhlcml0OwogICAgY3Vyc29yOiBwb2ludGVyOwogICAgYm9yZGVyLXJhZGl1czogNHB4OwogICAgdHJhbnNpdGlvbjogYmFja2dyb3VuZC1jb2xvciAwLjJzIGVhc2U7CiAgICBtYXJnaW46IDVweDsKICAgIGJveC1zaGFkb3c6IDAgMnB4IDZweCByZ2JhKDE1LDE3LDIxLDAuNik7Cn0KCmJ1dHRvbjpob3ZlciB7CiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMmE3OWZmOwp9CgpkaXYgewogICAgbWFyZ2luOiAyMHB4IDA7CiAgICBwYWRkaW5nOiAyMHB4OwogICAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tcGFuZWwpOwogICAgYm9yZGVyLXJhZGl1czogNHB4OwogICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tYm9yZGVyKTsKfQoKLmhpZ2hsaWdodGVkIHsKICAgIGJhY2tncm91bmQtY29sb3I6ICMxNzE5MWM7CiAgICBib3JkZXItbGVmdDogNHB4IHNvbGlkIHZhcigtLWRhbmdlcik7CiAgICBjb2xvcjogdmFyKC0tdGV4dCk7Cn0KCmlucHV0LCB0ZXh0YXJlYSB7CiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMGIwZDEwOwogICAgYm9yZGVyOiAycHggc29saWQgdmFyKC0tYm9yZGVyKTsKICAgIGNvbG9yOiB2YXIoLS10ZXh0KTsKICAgIHBhZGRpbmc6IDEwcHggMTJweDsKICAgIGZvbnQtZmFtaWx5OiBpbmhlcml0OwogICAgZm9udC1zaXplOiAxZW07CiAgICBib3JkZXItcmFkaXVzOiA0cHg7CiAgICBtYXJnaW46IDVweCAwOwogICAgd2lkdGg6IDEwMCU7CiAgICBtYXgtd2lkdGg6IDQwMHB4OwogICAgdHJhbnNpdGlvbjogYm9yZGVyLWNvbG9yIDAuMnMgZWFzZSwgYm94LXNoYWRvdyAwLjEycyBlYXNlOwp9CgppbnB1dDo6cGxhY2Vob2xkZXIsIHRleHRhcmVhOjpwbGFjZWhvbGRlciB7CiAgICBjb2xvcjogcmdiYSgxOTAsMjAwLDIxMCwwLjUpOwp9CgppbnB1dDpmb2N1cywgdGV4dGFyZWE6Zm9jdXMgewogICAgb3V0bGluZTogbm9uZTsKICAgIGJvcmRlci1jb2xvcjogdmFyKC0tYWNjZW50KTsKICAgIGJveC1zaGFkb3c6IDAgMCAwIDNweCByZ2JhKDg4LDE2NiwyNTUsMC4wOCk7Cn0KCnRleHRhcmVhIHsKICAgIHJlc2l6ZTogdmVydGljYWw7CiAgICBtaW4taGVpZ2h0OiAxMDBweDsKfQoKdWwsIG9sIHsKICAgIG1hcmdpbjogMTVweCAwIDE1cHggMzBweDsKICAgIGNvbG9yOiB2YXIoLS1tdXRlZCk7Cn0KCmxpIHsKICAgIG1hcmdpbjogMTBweCAwOwp9CgpibG9ja3F1b3RlIHsKICAgIGJvcmRlci1sZWZ0OiA0cHggc29saWQgdmFyKC0tYm9yZGVyKTsKICAgIHBhZGRpbmctbGVmdDogMjBweDsKICAgIG1hcmdpbjogMjBweCAwOwogICAgZm9udC1zdHlsZTogaXRhbGljOwogICAgY29sb3I6ICNhYWIzYmE7CiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMGYxMTEzOwogICAgcGFkZGluZzogMTVweCAyMHB4OwogICAgYm9yZGVyLXJhZGl1czogNHB4Owp9Cgpjb2RlIHsKICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWNvZGUtYmcpOwogICAgY29sb3I6IHZhcigtLWNvZGUtZmcpOwogICAgcGFkZGluZzogNHB4IDhweDsKICAgIGJvcmRlci1yYWRpdXM6IDNweDsKICAgIGZvbnQtZmFtaWx5OiAnQ291cmllciBOZXcnLCBDb3VyaWVyLCBtb25vc3BhY2U7CiAgICBmb250LXNpemU6IDAuOWVtOwogICAgZGlzcGxheTogaW5saW5lLWJsb2NrOwp9CgpwcmUgewogICAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tY29kZS1iZyk7CiAgICBjb2xvcjogdmFyKC0tY29kZS1mZyk7CiAgICBwYWRkaW5nOiAxMnB4OwogICAgYm9yZGVyLXJhZGl1czogNnB4OwogICAgb3ZlcmZsb3c6IGF1dG87CiAgICBib3JkZXI6IDFweCBzb2xpZCByZ2JhKDI1NSwyNTUsMjU1LDAuMDMpOwp9CgpzdHJvbmcgewogICAgY29sb3I6IHZhcigtLWhlYWRpbmcpOwogICAgZm9udC13ZWlnaHQ6IDcwMDsKfQoKZW0gewogICAgY29sb3I6IHZhcigtLW11dGVkKTsKICAgIGZvbnQtc3R5bGU6IGl0YWxpYzsKfQoKaHIgewogICAgYm9yZGVyOiBub25lOwogICAgaGVpZ2h0OiAxcHg7CiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDI1NSwyNTUsMjU1LDAuMDQpOwogICAgbWFyZ2luOiA0MHB4IDA7Cn0KCmltZyB7CiAgICBtYXgtd2lkdGg6IDEwMCU7CiAgICBoZWlnaHQ6IGF1dG87CiAgICBib3JkZXItcmFkaXVzOiA0cHg7CiAgICBtYXJnaW46IDE1cHggMDsKICAgIGRpc3BsYXk6IGJsb2NrOwogICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tYm9yZGVyKTsKfQoKLyogQ29udGFpbmVyIGFuZCB3cmFwcGVyIHN0eWxlcyAqLwouY29udGFpbmVyLCAud3JhcHBlciB7CiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMGQwZjEyOwogICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tYm9yZGVyKTsKICAgIGJvcmRlci1yYWRpdXM6IDRweDsKICAgIHBhZGRpbmc6IDI1cHg7CiAgICBtYXJnaW46IDI1cHggMDsKfQoKLmlubmVyLXNlY3Rpb24gewogICAgYmFja2dyb3VuZC1jb2xvcjogIzBiMGQwZjsKICAgIGJvcmRlci1sZWZ0OiAzcHggc29saWQgcmdiYSgyNTUsMjU1LDI1NSwwLjAzKTsKfQoKLmhpZ2hsaWdodCB7CiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMGUxMDEzOwogICAgYm9yZGVyOiAycHggc29saWQgdmFyKC0tYWNjZW50LXN0cm9uZyk7Cn0KCiAgICA8L3N0eWxlPgo8L2hlYWQ+Cjxib2R5PgogICAgPGgxPk1pbmltYWwgRGFyayBUaGVtZTwvaDE+CiAgICA8cD5FeHBlcmllbmNlIHRoZSBiZWF1dGlmdWwgc3R5bGluZyBvZiB0aGlzIHRoZW1lLjwvcD4KICAgIDxidXR0b24+Q2xpY2sgTWU8L2J1dHRvbj4KICAgIDxkaXYgY2xhc3M9ImhpZ2hsaWdodGVkIj4KICAgICAgICA8cD5UaGlzIGlzIGEgaGlnaGxpZ2h0ZWQgc2VjdGlvbiB3aXRoIGN1c3RvbSBzdHlsaW5nLjwvcD4KICAgIDwvZGl2Pgo8L2JvZHk+CjwvaHRtbD4="
+                        sandbox="allow-same-origin"
+                        scrolling="no"
+                    ></iframe>
                 </div>
                 <div class="theme-info">
                     <h2>Minimal Dark</h2>
-                    <p>All the simplicity of Minimal, but for the dark side. Clean typography and plenty of breathing room with a dark, easy-on-the-eyes background. Perfect for late-night coding sessions.</p>
+                    <p>A dark version of the minimal theme</p>
                     <div class="theme-tags">
                         <span class="theme-tag">Dark</span>
                         <span class="theme-tag">Clean</span>
@@ -511,27 +532,8 @@
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="instructions">
-            <h2>Want to Contribute Your Own Theme?</h2>
-            <ol>
-                <li>Fork the <a href="https://github.com/htmlforge-team/HtmlForge" target="_blank" style="color: #667eea; text-decoration: none; border-bottom: 1px solid #667eea;">HtmlForge repository</a></li>
-                <li>Create a new folder in <code>themes/YourThemeName/</code></li>
-                <li>Add your <code>style.css</code> file with your custom styles</li>
-                <li>Update the <code>themes.json</code> file with your theme's CSS and metadata</li>
-                <li>Add your theme to the <code>Theme</code> enum in Java</li>
-                <li>Submit a pull request with your amazing theme!</li>
-            </ol>
-            <p style="margin-top: 20px; color: rgba(255, 255, 255, 0.7); font-size: 1.05em;">
-                <strong>Note:</strong> Themes are now fetched dynamically from the JSON file, so users can access them without downloading the repository!
-            </p>
         </div>
-
-        <footer>
-            <p><a href="https://github.com/htmlforge-team/HtmlForge" target="_blank">View on GitHub</a> • <a href="themes.json" target="_blank">Browse themes.json</a></p>
-        </footer>
-    </div>
 </body>
 </html>
 
