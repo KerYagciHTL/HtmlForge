@@ -21,6 +21,8 @@ public class HtmlBuilder {
     private final String charset;
     private final String viewport;
     private Theme currentTheme;
+
+    private String outputName = "index.html";
     private static final Path OUTPUT_DIR = Paths.get("generated");
     private static final Path ASSETS_DIR = OUTPUT_DIR.resolve("assets");
 
@@ -305,7 +307,7 @@ public class HtmlBuilder {
 
         try {
             Files.createDirectories(Paths.get("generated"));
-            var filePath = Paths.get("generated/index.html");
+            var filePath = Paths.get("generated/" + outputName);
             Files.writeString(filePath, head.toString());
             System.out.println("HTML file created at: " + filePath.toAbsolutePath());
         } catch (Exception e) {
@@ -327,5 +329,13 @@ public class HtmlBuilder {
 
     public String getTitle() {
         return title;
+    }
+
+    public String getOutputName() {
+        return outputName;
+    }
+
+    public void setOutputName(String outputName) {
+        this.outputName = outputName;
     }
 }
