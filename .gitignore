@@ -47,3 +47,6 @@ generated
 # Secrets
 gradle.properties
 gradle/secring.gpg
+
+# Maven
+target/

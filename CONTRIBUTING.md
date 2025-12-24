@@ -43,7 +43,7 @@ Want to add a feature or fix a bug? Awesome! Here's the general flow:
 2. **Make your changes** - write your code!
 3. **Test it** - make sure it works
    ```bash
-   mvn test
+   ./gradlew test
    ```
 4. **Submit a PR** - we'll review it and work with you to get it merged
 Don't stress about getting everything perfect. We're happy to help you refine your contribution!
@@ -58,7 +58,6 @@ See [Creating Custom Themes](#creating-custom-themes) below for more details.
 ## Development Setup
 ### What You Need
 - **Java 21+** - [Download](https://www.oracle.com/java/technologies/downloads/)
-- **Maven** - [Download](https://maven.apache.org/download.cgi)
 - **Git** - [Download](https://git-scm.com/downloads)
 ### Getting Started
 ```bash
@@ -66,9 +65,9 @@ See [Creating Custom Themes](#creating-custom-themes) below for more details.
 git clone https://github.com/YOUR-USERNAME/HtmlForge.git
 cd HtmlForge
 # Build it
-mvn clean install
+./gradlew build
 # Run the example
-mvn exec:java -Dexec.mainClass="team.htmlforge.Main"
+./gradlew run
 # Check the generated HTML
 open generated/index.html
 ```
