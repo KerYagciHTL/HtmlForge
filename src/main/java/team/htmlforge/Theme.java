@@ -2,9 +2,10 @@ package team.htmlforge;
 
 public enum Theme {
     CODIX("Codix"),
-
     MINIMAL("Minimal"),
-    MINIMAL_DARK("MinimalDark"),;
+    MINIMAL_DARK("MinimalDark"),
+    LUXURY("Luxury"),
+    ;
 
     private final String themeName;
     private static final String THEME_JSON_URL = "https://htmlforge-team.github.io/HtmlForge/themes/themes.json";
