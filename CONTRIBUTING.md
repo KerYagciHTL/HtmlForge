@@ -58,11 +58,12 @@ See [Creating Custom Themes](#creating-custom-themes) below for more details.
 ## Development Setup
 ### What You Need
 - **Java 21+** - [Download](https://www.oracle.com/java/technologies/downloads/)
+- **Kotlin 1.9+** (recommended) - the project source is Kotlin-based
 - **Git** - [Download](https://git-scm.com/downloads)
 ### Getting Started
 ```bash
 # Clone your fork
-git clone https://github.com/YOUR-USERNAME/HtmlForge.git
+git clone https://github.com/htmlforge-team/HtmlForge.git
 cd HtmlForge
 # Build it
 ./gradlew build
@@ -75,33 +76,29 @@ That's it! You're ready to code.
 ---
 ## Code Guidelines (Optional)
 These are guidelines, not rules! We won't reject your PR if you don't follow these perfectly. We can always refine things together.
-### General Java Style
+### General Kotlin Style
 - Use 4 spaces for indentation (most IDEs do this by default)
 - Try to keep lines under 120 characters
-- Use meaningful variable names
+- Prefer idiomatic Kotlin: use `val` for immutable properties, prefer expression bodies, data classes where appropriate, and extension functions for small utilities
 **Example:**
-```java
+```kotlin
 // Good ✓
-public class Paragraph implements Element {
-    private final String content;
-    public Paragraph(String content) {
-        this.content = content;
-    }
+class Paragraph(private val content: String) : Element {
+    fun toHtml() = "<p>$content</p>\n"
 }
 // Also fine - we can help you refactor if needed
-public class Paragraph implements Element {
-    private String text;
-    public Paragraph(String t) { text = t; }
+class Paragraph(var text: String) : Element {
+    fun toHtml(): String { return "<p>$text</p>\n" }
 }
 ```
 ### Writing Tests
 If you're adding new functionality, tests are helpful but not required for your first PR. We can work on them together!
 Here's a simple example if you want to try:
-```java
+```kotlin
 @Test
-void toHtml_SimpleText_Works() {
-    Paragraph p = new Paragraph("Hello");
-    assertEquals("<p>Hello</p>", p.toHtml());
+fun toHtml_SimpleText_Works() {
+    val p = Paragraph("Hello")
+    assertEquals("<p>Hello</p>", p.toHtml())
 }
 ```
 ### Commit Messages
@@ -165,7 +162,8 @@ That's totally normal! Don't hesitate to:
 - Tag a maintainer for guidance
 ### Resources
 - [Java Documentation](https://docs.oracle.com/en/java/)
-- [Maven Guide](https://maven.apache.org/guides/)
+- [Kotlin Documentation](https://kotlinlang.org/docs/home.html)
+- [Gradle Guides](https://gradle.org/guides/)
 - [GitHub Flow](https://docs.github.com/en/get-started/quickstart/github-flow)
 ---
 ## Recognition
