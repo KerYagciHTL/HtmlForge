@@ -9,7 +9,7 @@ private const val JAVA_URL = "https://www.java.com"
 fun main() {
     val builder = HtmlBuilder(PAGE_TITLE)
 
-    builder.setOutputName("index.html")
+    builder.outputName = "index.html"
     builder.useTheme(Theme.CODIX)
 
     // Using fluent API
