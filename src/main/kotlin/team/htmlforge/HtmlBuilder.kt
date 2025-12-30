@@ -146,7 +146,7 @@ class HtmlBuilder(
 
             if (response.statusCode() == 200) {
                 val jsonResponse = response.body()
-                extractCssFromJson(jsonResponse, theme.name())
+                extractCssFromJson(jsonResponse, theme.name)
             } else null
         } catch (e: Exception) {
             println("Could not fetch theme from remote, trying local files...")
